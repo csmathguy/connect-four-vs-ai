@@ -39,8 +39,8 @@ Difficulty presets live in `server/ai_difficulty.json` and are loaded at server 
 
 Server environment config:
 
-  - Copy `server/env.example` to `server/.env` (optional)
-  - Set:
+- Copy `server/env.example` to `server/.env` (optional)
+- Set:
   - `PORT` (default `4444`)
   - `OPENAI_API_KEY` (optional; enables OpenAI provider for presets that request it)
   - `OPENAI_MODEL` (optional; defaults in code)
