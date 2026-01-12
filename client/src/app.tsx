@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { VibeKanbanWebCompanion } from "vibe-kanban-web-companion";
 import { Board } from "./components/board";
 import { Controls } from "./components/controls";
 import { createEmptyBoard, dropPiece, isDraw, winnerForBoard } from "./lib/connect4";
@@ -117,6 +118,7 @@ export function App() {
 
   return (
     <div className="page">
+      {import.meta.env.DEV ? <VibeKanbanWebCompanion /> : null}
       <header className="header">
         <h1>Connect4 Human vs AI</h1>
         <p>Click a column to drop a piece. You are Player 1. The AI is Player 2.</p>
@@ -142,4 +144,3 @@ export function App() {
     </div>
   );
 }
-
