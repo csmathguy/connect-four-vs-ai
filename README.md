@@ -13,14 +13,14 @@ npm install
 ## Run (dev)
 
 Runs:
-- Server on `PORT` (default `3001`)
-- Vite client on `5173` with `/api` proxied to the server
+- Server on `PORT` (default `4444`)
+- Vite client on `4445` with `/api` proxied to the server
 
 ```bash
 npm run dev
 ```
 
-Open `http://localhost:5173`.
+Open `http://localhost:4445`.
 
 ## Run (production-like locally)
 
@@ -31,7 +31,7 @@ npm run build
 npm run start
 ```
 
-Open `http://localhost:3001` (or your `PORT`).
+Open `http://localhost:4444` (or your `PORT`).
 
 ## Configure AI provider and difficulty
 
@@ -41,7 +41,7 @@ Server environment config:
 
 - Copy `server/env.example` to `server/.env` (optional)
 - Set:
-  - `PORT` (default `3001`)
+  - `PORT` (default `4444`)
   - `OPENAI_API_KEY` (optional; enables OpenAI provider for presets that request it)
   - `OPENAI_MODEL` (optional; defaults in code)
 
