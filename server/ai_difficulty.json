@@ -1,0 +1,24 @@
+{
+  "defaultDifficulty": "easy",
+  "presets": {
+    "easy": {
+      "label": "Easy",
+      "provider": "local",
+      "strategy": "random",
+      "searchDepth": 0
+    },
+    "medium": {
+      "label": "Medium",
+      "provider": "local",
+      "strategy": "minimax",
+      "searchDepth": 2
+    },
+    "hard": {
+      "label": "Hard",
+      "provider": "openai",
+      "strategy": "minimax",
+      "searchDepth": 4
+    }
+  }
+}
+

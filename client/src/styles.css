@@ -1,0 +1,120 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f7f7fb;
+  color: #1b1b1f;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+}
+
+.header p {
+  margin: 0 0 16px;
+  color: #444;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 12px 0 16px;
+}
+
+.controls select,
+.controls button {
+  font: inherit;
+  padding: 8px 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 56px);
+  grid-template-rows: repeat(6, 56px);
+  gap: 8px;
+  padding: 14px;
+  background: #0b4aa2;
+  border-radius: 12px;
+  width: fit-content;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.cell {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: #e9eef7;
+  display: grid;
+  place-items: center;
+}
+
+.disc {
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  background: transparent;
+}
+
+.disc.p1 {
+  background: #e33b3b;
+}
+
+.disc.p2 {
+  background: #ffd34d;
+}
+
+.boardOverlay {
+  position: relative;
+}
+
+.clickLayer {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 56px);
+  grid-template-rows: 1fr;
+  gap: 8px;
+  padding: 14px;
+}
+
+.colButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.colButton:disabled {
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 16px;
+  padding: 12px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e8e8ef;
+}
+
+.meta {
+  margin-top: 6px;
+  color: #555;
+  font-size: 14px;
+}
+
+.error {
+  margin-top: 8px;
+  color: #b00020;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+

@@ -1,0 +1,8 @@
+# Sample conservative Codex rules (copy into your user rules folder)
+
+- Ask before `git push` or any remote publish action.
+- Never print environment variables or secrets (e.g. `OPENAI_API_KEY`).
+- Ask before any `curl`, `Invoke-WebRequest`, or other HTTP calls.
+- Prefer `npm` over other package managers.
+- Avoid destructive commands (`rm -rf`, `git reset --hard`) unless explicitly requested.
+

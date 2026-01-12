@@ -1,0 +1,19 @@
+{
+  "name": "connect-four-vs-ai",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n server,client -c blue,green \"npm -w server run dev\" \"npm -w client run dev\"",
+    "build": "npm -w client run build && npm -w server run build",
+    "start": "npm -w server run start",
+    "typecheck": "npm --workspaces --if-present run typecheck",
+    "lint": "npm --workspaces --if-present run lint",
+    "test": "npm --workspaces --if-present run test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
