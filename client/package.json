@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vibe-kanban-web-companion": "^0.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",
@@ -29,4 +30,3 @@
     "vitest": "^2.1.8"
   }
 }
-
